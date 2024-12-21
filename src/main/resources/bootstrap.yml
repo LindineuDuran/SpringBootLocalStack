@@ -12,6 +12,10 @@ spring:
         enabled: true
         endpoint: http://localhost:4566
         default-context: /config/spring-boot-localstack_localstack/
+      secretsmanager:
+        enabled: true
+        endpoint: http://localhost:4566
+        default-context: /secret/spring-boot-localstack_localstack
       credentials:
         access-key: test
         secret-key: test

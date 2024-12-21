@@ -17,34 +17,33 @@ import java.net.URI;
 @Setter
 @Configuration
 @EnableConfigurationProperties
-public class ParameterStoreConfig {
-
+public class ParameterStoreConfig
+{
 	@Value("${helloWorld:Default Hello World}")
 	private String helloWorld;
 
-	public String getHelloWorld() {
+	public String getHelloWorld()
+	{
 		String parameterName = "/config/spring-boot-localstack_localstack/helloWorld";
 
 		// Configurar credenciais fictícias para LocalStack
 		AwsBasicCredentials awsCreds = AwsBasicCredentials.create("test", "test");
 
 		// Configurar o cliente SSM para usar o endpoint do LocalStack
-		SsmClient ssmClient = SsmClient.builder()
-				.credentialsProvider(StaticCredentialsProvider.create(awsCreds))
-				.region(Region.SA_EAST_1)
-				.endpointOverride(URI.create("http://localhost:4566")) // Endpoint do LocalStack
+		SsmClient ssmClient = SsmClient.builder().credentialsProvider(StaticCredentialsProvider.create(awsCreds)).region(Region.SA_EAST_1).endpointOverride(URI.create("http://localhost:4566")) // Endpoint do LocalStack
 				.build();
 
-		try {
+		try
+		{
 			// Requisição ao Parameter Store
-			GetParameterRequest parameterRequest = GetParameterRequest.builder()
-					.name(parameterName)
-					.build();
+			GetParameterRequest parameterRequest = GetParameterRequest.builder().name(parameterName).build();
 
 			GetParameterResponse parameterResponse = ssmClient.getParameter(parameterRequest);
 			return parameterResponse.parameter().value();
 
-		} catch (SsmException e) {
+		}
+		catch (SsmException e)
+		{
 			System.err.println("Erro ao obter parâmetro do Parameter Store: " + e.getMessage());
 			return helloWorld; // Retorna o valor padrão caso ocorra um erro
 		}

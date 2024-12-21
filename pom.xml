@@ -20,6 +20,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<spring.cloud-aws>2.4.2</spring.cloud-aws>
+		<awssdk>2.20.31</awssdk>
 		<logs.path>./logs</logs.path>
 	</properties>
 
@@ -47,19 +48,14 @@
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>
 			<artifactId>ssm</artifactId>
-			<version>2.20.31</version>
+			<version>${awssdk}</version>
 		</dependency>
 
-		<!-- aws-parameter-store-config -->
-		<!--<dependency>
-			<groupId>io.awspring.cloud</groupId>
-			<artifactId>spring-cloud-starter-aws-parameter-store-config</artifactId>
-		</dependency>-->
-
-		<!-- aws-secrets-manager-config -->
+		<!-- AWS SDK SECRETS MANAGER -->
 		<dependency>
-			<groupId>io.awspring.cloud</groupId>
-			<artifactId>spring-cloud-starter-aws-secrets-manager-config</artifactId>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>secretsmanager</artifactId>
+			<version>${awssdk}</version>
 		</dependency>
 
 		<!-- aws-messaging -->

@@ -25,6 +25,11 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
 		<!-- aws-serverless-java-container-springboot2 -->
 		<dependency>
             <groupId>com.amazonaws.serverless</groupId>
@@ -32,16 +37,17 @@
             <version>1.9.4</version>
         </dependency>
 
-        <!-- Spring Boot -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<!-- Spring Cloud Function -->
+		<!-- SPRING CLOUD FUNCTION -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-function-adapter-aws</artifactId>
+		</dependency>
+
+		<!-- AWS SDK SDK CORE -->
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>sdk-core</artifactId>
+			<version>${awssdk}</version>
 		</dependency>
 
 		<!-- AWS SDK SSM -->
@@ -58,10 +64,18 @@
 			<version>${awssdk}</version>
 		</dependency>
 
-		<!-- aws-messaging -->
+		<!-- AWS SDK SQS -->
 		<dependency>
-			<groupId>io.awspring.cloud</groupId>
-			<artifactId>spring-cloud-starter-aws-messaging</artifactId>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>sqs</artifactId>
+			<version>${awssdk}</version>
+		</dependency>
+
+		<!-- AWS SDK REGIONS -->
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>regions</artifactId>
+			<version>${awssdk}</version>
 		</dependency>
 
 		<!-- Lombok (opcional) -->
@@ -96,14 +110,6 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<dependency>
-				<groupId>io.awspring.cloud</groupId>
-				<artifactId>spring-cloud-aws-dependencies</artifactId>
-				<version>${spring.cloud-aws}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>

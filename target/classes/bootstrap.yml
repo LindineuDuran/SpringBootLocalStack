@@ -8,6 +8,14 @@ spring:
       on-profile: localstack
   cloud:
     aws:
+      region:
+        static: sa-east-1
+      credentials:
+        access-key: test
+        secret-key: test
+      skip_credentials_validation: true
+      skip_metadata_api_check: true
+      skip_requesting_account_id: true
       paramstore:
         enabled: true
         endpoint: http://localhost:4566
@@ -16,8 +24,6 @@ spring:
         enabled: true
         endpoint: http://localhost:4566
         default-context: /secret/spring-boot-localstack_localstack
-      credentials:
-        access-key: test
-        secret-key: test
-      region:
-        static: sa-east-1
+      sqs:
+        enabled: true
+        endpoint: http://localhost:4566

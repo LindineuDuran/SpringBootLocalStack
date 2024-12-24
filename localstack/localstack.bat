@@ -27,3 +27,7 @@ REM aws --endpoint-url=http://localhost:4566 --profile localstack sqs send-messa
 
 REM Verifica Sucesso no Envio da Mensagem
 REM aws --endpoint http://localhost:4566 --profile localstack sqs receive-message --queue-url http://localhost:4566/000000000000/sqsHelloWorld
+
+echo ### Criando Queue(Standard) no SNS do LocalStack...
+aws --endpoint http://localhost:4566 --profile localstack sns create-topic --name snsHelloWorld
+aws --endpoint http://localhost:4566 --profile localstack sns subscribe --topic-arn arn:aws:sns:sa-east-1:000000000000:snsHelloWorld --protocol sqs --notification-endpoint arn:aws:sqs:sa-east-1:000000000000:sqsHelloWorld

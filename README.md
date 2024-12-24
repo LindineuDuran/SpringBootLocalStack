@@ -14,6 +14,7 @@
 - [Usando AWS Secrets Manager](#-usando-aws-secrets-manager)
 - [AWS SQS - Como Publicar e Consumir Mensagens](#-aws-sqs-como-publicar-e-consumir-mensagens)
 - [Usando o AWS SQS](#usando-o-aws-sqs)
+- [Usando o AWS SNS](#usando-o-aws-sns)
 - [Material de Apoio](#-material-de-apoio)
 - [Versões das Libs](#-versões-das-libs)
 
@@ -21,7 +22,7 @@
 
 ## 🎥 Criando e Configurando um Projeto do Zero
 ### **1. Spring Boot + LocalStack: criando e configurando um projeto do ZERO**
-🔗 [Assista aqui](https://youtu.be/Vlmjw5nifOo?si=cVn6-9pNSSwNaR5D)
+🔗 [Assista o vídeo](https://youtu.be/Vlmjw5nifOo?si=cVn6-9pNSSwNaR5D)
 | Tempo     | Tópico                                                                                   |
 |-----------|------------------------------------------------------------------------------------------|
 | 00:00     | Introdução                                                                               |
@@ -51,7 +52,7 @@
 
 ## 📽 Usando AWS Secrets Manager
 ### **2. Spring Boot + LocalStack: usando AWS Secrets Manager**
-🔗 [Assista aqui](https://youtu.be/JhWFD-4oQqQ?si=xohkG-_SBsAC2Frj)
+🔗 [Assista o vídeo](https://youtu.be/JhWFD-4oQqQ?si=xohkG-_SBsAC2Frj)
 
 | Tempo     | Tópico                                          |
 |-----------|-------------------------------------------------|
@@ -68,7 +69,7 @@
 
 ## 📽 AWS SQS - Como Publicar e Consumir Mensagens
 ### **3. AWS SQS: Como publicar e consumir mensagens com Spring Cloud AWS**
-🔗 [Assista aqui](https://youtu.be/56_F59cIT8M?si=wx0rlAz7Thn0t9wW)
+🔗 [Assista o vídeo](https://youtu.be/56_F59cIT8M?si=wx0rlAz7Thn0t9wW)
 
 | Tempo     | Tópico                                |
 |-----------|---------------------------------------|
@@ -86,7 +87,7 @@
 
 ## 📽 Usando o AWS SQS
 ### **4. Spring Boot + LocalStack: usando o AWS SQS**
-🔗 [Assista aqui](https://youtu.be/cAcPjO5eTY0?si=FBRhYZoPZm5irh_1)
+🔗 [Assista o vídeo](https://youtu.be/cAcPjO5eTY0?si=FBRhYZoPZm5irh_1)
 
 | Tempo     | Tópico                                                      |
 |-----------|-------------------------------------------------------------|
@@ -104,6 +105,25 @@
 | 10:36     | Executando no Insomnia                                      |
 | 11:44     | Enviando mensagem pela aplicação e consumindo pelo AWS CLI  |
 | 13:30     | Arquitetura Orientada a Eventos                             |
+
+---
+
+## 📽 Usando o AWS SNS
+### **5. Spring Boot + LocalStack: usando o AWS SNS**
+🔗 [Assista o vídeo](https://youtu.be/BeHXJeIgTxw?si=XwgS12enHFgT6gn5)
+
+| Tempo     | Tópico                       |
+|-----------|------------------------------|
+| 00:00     | Introdução                   |
+| 00:42     | O que é o AWS SNS?           |
+| 01:44     | Arquitetura da Aplicação     |
+| 02:20     | Diferença entre o SQS e SNS  |
+| 03:56     | Configuração da aplicação    |
+| 04:39     | Criando o tópico com AWS CLI |
+| 07:41     | Inicializando a aplicação    |
+| 08:38     | Testando a aplicação         |
+| 10:36     | Formato da mensagem do SNS   |
+| 11:59     | Código fonte da aplicação    |
 
 ---
 

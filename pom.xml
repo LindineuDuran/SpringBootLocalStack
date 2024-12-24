@@ -71,6 +71,13 @@
 			<version>${awssdk}</version>
 		</dependency>
 
+		<!-- AWS SDK SNS -->
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>sns</artifactId>
+			<version>${awssdk}</version>
+		</dependency>
+
 		<!-- AWS SDK REGIONS -->
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>

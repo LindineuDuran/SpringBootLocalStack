@@ -27,3 +27,6 @@ spring:
       sqs:
         enabled: true
         endpoint: http://localhost:4566
+      sns:
+        enabled: true
+        endpoint: http://localhost:4566

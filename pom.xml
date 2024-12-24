@@ -78,6 +78,13 @@
 			<version>${awssdk}</version>
 		</dependency>
 
+		<!-- AWS SDK S3 -->
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>s3</artifactId>
+			<version>${awssdk}</version>
+		</dependency>
+
 		<!-- AWS SDK REGIONS -->
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>

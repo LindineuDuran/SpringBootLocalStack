@@ -20,6 +20,9 @@ spring:
         enabled: true
         endpoint: http://localhost:4566
         default-context: /config/spring-boot-localstack_localstack/
+      s3:
+        enabled: true
+        endpoint: http://localhost:4566
       secretsmanager:
         enabled: true
         endpoint: http://localhost:4566

@@ -15,6 +15,7 @@
 - [AWS SQS - Como Publicar e Consumir Mensagens](#-aws-sqs-como-publicar-e-consumir-mensagens)
 - [Usando o AWS SQS](#usando-o-aws-sqs)
 - [Usando o AWS SNS](#usando-o-aws-sns)
+- [Efetuando Operações com AWS S3](#efetuando-operacoes-om-aws-s3)
 - [Material de Apoio](#-material-de-apoio)
 - [Versões das Libs](#-versões-das-libs)
 
@@ -124,6 +125,29 @@
 | 08:38     | Testando a aplicação         |
 | 10:36     | Formato da mensagem do SNS   |
 | 11:59     | Código fonte da aplicação    |
+
+-----
+
+## 📽 Efetuando Operações com AWS S3
+### **6. Spring Boot + LocalStack: efetuando operações com AWS S3**
+🔗 [Assista o vídeo](https://youtu.be/yVaDgaV6AL8?si=n3Znz4t5EeGoz_U1)
+
+| Tempo     | Tópico                                          |
+|-----------|-------------------------------------------------|
+| 00:00     | Introdução                                      |
+| 00:30     | O que é o AWS S3?                               |
+| 01:03     | Configuração da aplicação                       |
+| 02:54     | Criando bucket com AWS CLI                      |
+| 04:31     | Código fonte da aplicação                       |
+| 05:16     | Classe ResourceLoader e ResourcePatternResolver |
+| 07:49     | Salvando um arquivo no S3                       |
+| 10:33     | Pesquisando arquivos em um bucket               |
+| 13:10     | Mostrar o conteúdo de um arquivo                |
+| 15:14     | Código da classe Controller                     |
+| 19:42     | Exibindo o conteúdo do arquivo                  |
+| 21:23     | Executando testes no Insomnia                   |
+| 22:39     | Exibindo os arquivos no bucket com AWS CLI      |
+| 23:55     | Concluindo os testes no Insomnia                |
 
 ---
 

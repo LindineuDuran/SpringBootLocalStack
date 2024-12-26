@@ -33,3 +33,6 @@ spring:
       sns:
         enabled: true
         endpoint: http://localhost:4566
+      dynamodb:
+        enabled: true
+        endpoint: http://localhost:4566

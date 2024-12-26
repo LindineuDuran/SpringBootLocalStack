@@ -16,6 +16,7 @@
 - [Usando o AWS SQS](#usando-o-aws-sqs)
 - [Usando o AWS SNS](#usando-o-aws-sns)
 - [Efetuando Operações com AWS S3](#efetuando-operacoes-om-aws-s3)
+- [Como criar um CRUD com Spring Boot e Java 21](#como-criar-um-crud-com-spring-boot-e-java-21)
 - [Material de Apoio](#-material-de-apoio)
 - [Versões das Libs](#-versões-das-libs)
 
@@ -148,6 +149,27 @@
 | 21:23     | Executando testes no Insomnia                   |
 | 22:39     | Exibindo os arquivos no bucket com AWS CLI      |
 | 23:55     | Concluindo os testes no Insomnia                |
+-----
+
+## 📽 Como criar um CRUD com Spring Boot e Java 21
+### **7. AWS DynamoDB: Como criar um CRUD com Spring Boot e Java 21**
+🔗 [Assista o vídeo](https://youtu.be/qxSeffy6Nr4?si=5vjHXwMA9FVwNyHG)
+
+| Tempo     | Tópico                                          |
+|-----------|-------------------------------------------------|
+| 00:00     | Introdução                                      |
+| 00:35     | Conhecer o projeto de hoje                      |
+| 01:25     | LocalStack e AWS CLI                            |
+| 01:45     | Iniciar o projeto                               |
+| 02:38     | Spring Cloud AWS                                |
+| 04:20     | Configurando o DynamoDB Client                  |
+| 06:32     | Configurando a entidade do DynamoDb             |
+| 09:09     | Criando a funcionalidade de 'CADASTRO'          |
+| 18:27     | Criando a funcionalidade de 'LISTAGEM'          |
+| 22:40     | Criando a funcionalidade de 'CONSULTA'          |
+| 26:02     | Criando a funcionalidade de 'ATUALIZAÇÃO'       |
+| 28:32     | Criando a funcionalidade de 'DELEÇÃO'           |
+| 29:42     | Conclusão                                       |
 
 ---
 

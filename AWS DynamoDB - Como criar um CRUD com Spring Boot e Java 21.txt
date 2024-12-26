@@ -1,0 +1,12 @@
+AWS DynamoDB: Como criar um CRUD com Spring Boot e Java 21
+https://youtu.be/qxSeffy6Nr4?si=Y3hWdAihP6zwJDr1
+
+Neste vídeo, nós vamos mostrar como podemos criar um CRUD no DynamoDB com uma aplicação Spring Boot, utilizando a dependência Spring Cloud AWS.
+
+Estaremos desenvolvendo com o DynamoDB em ambiente local, sem depender da AWS. Isso tudo só é possível, graças a LocalStack, com ela você conseguirá aumentar a sua produtividade em tempo de desenvolvimento, pois você não dependerá mais de um ambiente real na AWS ou tempo de esteira. Além disso, você elimina as chances de gerar algum custo ao testar os serviços da AWS. 
+
+Github do projeto:
+https://github.com/buildrun-tech/buildrun-java-aws-dynamodb-crud-exemplo
+
+Spring Cloud AWS:
+https://docs.awspring.io/spring-cloud-aws/docs/3.1.0/reference/html/index.html#starter-dependencies

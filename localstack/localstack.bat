@@ -37,3 +37,6 @@ aws --endpoint http://localhost:4566 --profile localstack s3 mb s3://s3-hellowor
 
 REM Confirmar a Criação do Bucket
 REM aws --endpoint-url=http://localhost:4566 s3 ls
+
+echo ### Cria Tabela
+aws --endpoint-url=http://localhost:4566 --profile localstack dynamodb create-table --table-name PlayerHistory --attribute-definitions AttributeName=player_id,AttributeType=S AttributeName=game_id,AttributeType=S --key-schema AttributeName=player_id,KeyType=HASH AttributeName=game_id,KeyType=RANGE --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5

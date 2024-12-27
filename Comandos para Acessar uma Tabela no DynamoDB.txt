@@ -1,4 +1,4 @@
-# Cria Tabela
+# Cria Tabela PlayerHistory
 aws --endpoint-url=http://localhost:4566 dynamodb create-table \
     --table-name PlayerHistory \
     --attribute-definitions \
@@ -39,3 +39,19 @@ aws dynamodb delete-item \
   --table-name PlayerHistory \
   --keySchema '{"id": {"S": "1"}}' \
   --endpoint-url=http://localhost:4566
+
+# Cria Tabela Books
+aws --endpoint-url=http://localhost:4566 --profile localstack dynamodb create-table \
+--table-name Books \
+--attribute-definitions \
+    AttributeName=id,AttributeType=S \
+--key-schema \
+    AttributeName=id,KeyType=HASH \
+--provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5
+
+# Adicionar um item ao DynamoDB
+aws dynamodb put-item \
+  --table-name Books \
+  --item '{"id": {"S": "1"}, "title": {"S": "Test Book"}, "author": {"S": "Author Name"}}' \
+  --endpoint-url=http://localhost:4566
+

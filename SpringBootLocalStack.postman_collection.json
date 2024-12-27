@@ -1,0 +1,612 @@
+{
+	"info": {
+		"_postman_id": "a4b46dd0-72f4-4ab8-95d8-7f33aa0bbc9d",
+		"name": "SpringBootLocalStack",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12464052"
+	},
+	"item": [
+		{
+			"name": "Get Parameter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/parameterStoreConfig",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parameterStoreConfig"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Secrets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/secretsManagerConfiguration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"secretsManagerConfiguration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Send Message?message=Aleluia! Está funcionando",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sendMessage?message=Aleluia! Está funcionando",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sendMessage"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "Aleluia! Está funcionando"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Send Message?message=Hello World SQS!!!",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sendMessage?message=Hello World SQS!!!",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sendMessage"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "Hello World SQS!!!"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Send Message?message=Eita mundão véio!!!",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sendMessage?message=Eita mundão véio!!!",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sendMessage"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "Eita mundão véio!!!"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Topic Message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/topicMessage?message=Hello, this is a simple message!",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicMessage"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "Hello, this is a simple message!"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get S3 Files",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/s3/files",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"s3",
+						"files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post File in S3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/s3/upload?fileName=teste.txt&content=Conteúdo do arquivo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"s3",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "fileName",
+							"value": "teste.txt"
+						},
+						{
+							"key": "content",
+							"value": "Conteúdo do arquivo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a File in S3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/s3/file?fileName=teste.txt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"s3",
+						"file"
+					],
+					"query": [
+						{
+							"key": "fileName",
+							"value": "teste.txt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a File in S3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/s3/delete?fileName=teste.txt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"s3",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "fileName",
+							"value": "teste.txt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post File in S3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/s3/upload?fileName=teste.txt&content=Conteúdo do arquivo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"s3",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "fileName",
+							"value": "teste.txt"
+						},
+						{
+							"key": "content",
+							"value": "Conteúdo do arquivo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get DynamoDB Players",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/players/bruno/games",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"players",
+						"bruno",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get DynamoDB Score For a Player",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/players/bruno/games/2024-12-26T17:34:22.240262100Z-3ea7e564-a5a1-407b-90d6-a88e1ecbb676",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"players",
+						"bruno",
+						"games",
+						"2024-12-26T17:34:22.240262100Z-3ea7e564-a5a1-407b-90d6-a88e1ecbb676"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put ALtera o Score de um Game de um Player",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"score\":\"100\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/players/bruno/games/2024-12-26T17:34:22.240262100Z-3ea7e564-a5a1-407b-90d6-a88e1ecbb676",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"players",
+						"bruno",
+						"games",
+						"2024-12-26T17:34:22.240262100Z-3ea7e564-a5a1-407b-90d6-a88e1ecbb676"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Cadastra um Novo Player Com seu Game e Score",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"score\":\"90\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/players/bruno/games",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"players",
+						"bruno",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Elimina o Score de um Game para um Player",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/players/bruno/games/2024-12-26T17:34:34.708549800Z-3f64d51f-40a1-4379-8a36-1f31511cdc6d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"players",
+						"bruno",
+						"games",
+						"2024-12-26T17:34:34.708549800Z-3f64d51f-40a1-4379-8a36-1f31511cdc6d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a File in S3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/s3/file?fileName=teste.txt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"s3",
+						"file"
+					],
+					"query": [
+						{
+							"key": "fileName",
+							"value": "teste.txt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostListBook - Sem IDs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n\t\t\"title\": \"Meditações\",\r\n\t\t\"author\": \"Marco Aurélio\"\r\n\t},\r\n\t{\r\n\t\t\"title\": \"O Homem Mais Rico da Babilônia\",\r\n\t\t\"author\": \"George S. Clason\"\r\n    },\r\n    {\r\n        \"title\": \"O Senhor dos Anéis - A Sociedade do Anel\",\r\n\t\t\"author\": \"J. R. R. Tolkien\"\r\n    },\r\n    {\r\n        \"title\": \"O Senhor dos Anéis - O Retorno do Rei\",\r\n\t\t\"author\": \"J. R. R. Tolkien\"\r\n    },\r\n    {\r\n        \"title\": \"O Senhor dos Anéis - As Duas Torres\",\r\n\t\t\"author\": \"J. R. R. Tolkien\"\r\n    },\r\n    {\r\n        \"title\": \"A Fundação\",\r\n\t\t\"author\": \"Isaac Azimov\"\r\n    },\r\n    {\r\n        \"title\": \"1984\",\r\n\t\t\"author\": \"George Orwell\"\r\n    },\r\n    {\r\n        \"title\": \"A Revolução dos Bichos\",\r\n\t\t\"author\": \"George Orwell\"\r\n    },\r\n    {\r\n        \"title\": \"Admirável Mundo Novo\",\r\n\t\t\"author\": \"Aldous Huxley\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/book/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBookById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/book/2024-12-27T13:36:36.689402400Z-42896be3-d774-4659-ac56-de939d5d45d5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"2024-12-27T13:36:36.689402400Z-42896be3-d774-4659-ac56-de939d5d45d5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\t\t\"title\": \"Fahrenheit 451\",\r\n\t\t\"author\": \"Ray Bradbury\"\r\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/book/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Tom Sawyer\",\r\n  \"author\": \"Marck Twain\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/book/2024-12-27T13:45:05.094758300Z-a956faaa-1374-44f3-a6f9-5c64eb5d106f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"2024-12-27T13:45:05.094758300Z-a956faaa-1374-44f3-a6f9-5c64eb5d106f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/book/2024-12-27T13:45:05.094758300Z-a956faaa-1374-44f3-a6f9-5c64eb5d106f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"2024-12-27T13:45:05.094758300Z-a956faaa-1374-44f3-a6f9-5c64eb5d106f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

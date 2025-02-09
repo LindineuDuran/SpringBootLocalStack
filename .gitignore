@@ -57,3 +57,4 @@ target/classes/bootstrap.yml
 target/classes/application.properties
 target/classes/application.properties
 target/classes/bootstrap.yml
+localstack/volume/cache/service-catalog-4_1_2_dev4-1_36_11.pickle

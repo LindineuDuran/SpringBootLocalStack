@@ -43,3 +43,4 @@ aws --endpoint-url=http://localhost:4566 --profile localstack dynamodb create-ta
 
 echo ### Cria Tabela Books
 aws --endpoint-url=http://localhost:4566 --profile localstack dynamodb create-table --table-name Books --attribute-definitions AttributeName=id,AttributeType=S --key-schema AttributeName=id,KeyType=HASH --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5
+

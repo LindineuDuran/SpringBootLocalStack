@@ -16,6 +16,16 @@ services:
     volumes:
       - "${LOCALSTACK_VOLUME_DIR:-./volume}:/var/lib/localstack"
       - "/var/run/docker.sock:/var/run/docker.sock"
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379" # Porta padrão do Redis
+    networks:
+      - my-network
+    command: ["redis-server", "--appendonly", "yes"] # Configuração para persistência opcional
+
 networks:
   my-network:
     driver: bridge
